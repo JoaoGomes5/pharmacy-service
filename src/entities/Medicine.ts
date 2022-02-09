@@ -1,26 +1,26 @@
-import { Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm"
+import { Column, CreateDateColumn, Entity, JoinColumn, OneToOne, PrimaryColumn } from "typeorm"
 import { v4 as uuid } from 'uuid'
 
-@Entity('users')
-export class User {
+@Entity('medicines')
+export class Medicine {
 
   @PrimaryColumn()
   id: string
   
   @Column()
-  nif: number
+  name: string 
+
+  @Column()
+  active_ingredient: string 
+
+  @Column()
+  stock: number 
+
+  @Column()
+  brand: string
   
   @Column()
-  name: string
-  
-  @Column()
-  email: string
-  
-  @Column()
-  phone: number
-  
-  @Column()
-  is_infected: boolean
+  intake: string
   
   @CreateDateColumn()
   created_at: Date

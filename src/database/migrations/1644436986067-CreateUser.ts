@@ -11,9 +11,10 @@ export class CreateUser1644436986067 implements MigrationInterface {
                         name: 'id',
                         type: 'uuid',
                         isPrimary: true,
+                        spatialFeatureType: "uuid()"
                     },
                     {
-                        name: 'client_id',
+                        name: 'nif',
                         type: 'integer',
                         isUnique: true,
                     },
@@ -26,11 +27,11 @@ export class CreateUser1644436986067 implements MigrationInterface {
                         type: 'varchar',
                     },
                     {
-                        name: 'home_id',
+                        name: 'phone',
                         type: 'integer',
                     },
                     {
-                        name: 'is_infected',
+                        name: 'isInfected',
                         type: 'boolean',
                     },
                     {
