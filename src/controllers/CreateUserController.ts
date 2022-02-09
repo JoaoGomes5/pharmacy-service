@@ -26,8 +26,8 @@ export class CreateUserController {
     if(result instanceof Error) {
       return res.status(400).json(result.message)
     }
-    console.log(result);
     
+    console.log("User Created");
     return res.status(200).json(result)
   }
 }
