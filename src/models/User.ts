@@ -1,4 +1,5 @@
-export class User {
+export type User = {
   name: string;
   email: string;
 }
+

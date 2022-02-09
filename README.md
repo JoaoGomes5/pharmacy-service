@@ -2,7 +2,7 @@
 
 ## Realizar encomendas
 
-- Nao sei do que
+- Medicamentos
 
 ## Testes covid
 

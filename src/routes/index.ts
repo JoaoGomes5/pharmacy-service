@@ -7,4 +7,5 @@ const routes = Router();
 routes.get('/' , UsersController.index);
 
 
+
 export default routes;
