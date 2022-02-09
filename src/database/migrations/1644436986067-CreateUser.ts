@@ -31,7 +31,7 @@ export class CreateUser1644436986067 implements MigrationInterface {
                         type: 'integer',
                     },
                     {
-                        name: 'isInfected',
+                        name: 'is_infected',
                         type: 'boolean',
                     },
                     {

@@ -1,10 +1,10 @@
-import  UsersController  from '@controllers/UsersController';
+import { CreateUserController } from '@controllers/CreateUserController';
 import  { Router } from 'express';
 
 
 const routes = Router();
 
-routes.get('/' , UsersController.index);
+routes.post('/users' , new CreateUserController().handle);
 
 
 

@@ -42,7 +42,7 @@ export class CreateMedicine1644441559014 implements MigrationInterface {
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.dropTable('medications')
+        await queryRunner.dropTable('medicines')
     }
 
 }
