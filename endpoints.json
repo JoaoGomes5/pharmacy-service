@@ -1,0 +1,12 @@
+
+{
+  "end points examples" : {
+    "create user": {
+      "nif": 789654321,
+      "name": "Joao Brito",
+      "email": "jb@gmail.com",
+      "phone": 988888888,
+      "is_infected": true
+    }
+  }
+}
