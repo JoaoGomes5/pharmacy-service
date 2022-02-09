@@ -1,17 +1,17 @@
-import { json, Request, response, Response } from "express";
+import { Request, Response } from "express";
 import { CreateUserService } from "src/services/CreateUserService";
 
 
 
 export class CreateUserController {
-  async handle(req: Request, res: Response) {
+  async handle(request: Request, response: Response) {
     const {
       nif, 
       name, 
       email, 
       phone, 
       is_infected
-    } = req.body;
+    } = request.body;
 
     const createUserService = new CreateUserService();
 
@@ -24,10 +24,10 @@ export class CreateUserController {
     })
 
     if(result instanceof Error) {
-      return res.status(400).json(result.message)
+      return response.status(400).json(result.message)
     }
     
     console.log("User Created");
-    return res.status(200).json(result)
+    return response.status(200).json(result)
   }
 }
