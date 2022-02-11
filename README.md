@@ -6,6 +6,6 @@
 
 ## Testes covid
 
-- Nome paciente,
+- Nome paciente
 - Data
 - Teste positivo
