@@ -1,0 +1,11 @@
+# Create User
+POST http://localhost:3333/users HTTP/1.1
+content-type: application/json
+
+{
+      "nif": 908765432,
+      "name": "Dara Alves",
+      "email": "dara@gmail.com",
+      "phone": 918765431,
+      "is_infected": false
+}

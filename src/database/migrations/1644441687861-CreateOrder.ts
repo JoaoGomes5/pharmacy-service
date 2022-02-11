@@ -13,8 +13,8 @@ export class CreateOrder1644441687861 implements MigrationInterface {
                         isPrimary: true,
                     },
                     {
-                        name: 'medicine_id',
-                        type: 'uuid',
+                        name: 'medicine_reference',
+                        type: 'varchar',
                     },
                     {
                         name: 'home_id',
@@ -32,10 +32,10 @@ export class CreateOrder1644441687861 implements MigrationInterface {
                 ], 
                 foreignKeys: [
                     {
-                        name : 'fk_medicine_id',
-                        columnNames: ['medicine_id'],
+                        name : 'fk_medicine_reference',
+                        columnNames: ['medicine_reference'],
                         referencedTableName: 'medicines',
-                        referencedColumnNames: ['id']
+                        referencedColumnNames: ['reference']
 
                     } 
                 ]

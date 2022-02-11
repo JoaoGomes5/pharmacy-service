@@ -11,6 +11,9 @@ export class Medicine {
   name: string 
 
   @Column()
+  reference: string 
+
+  @Column()
   active_ingredient: string 
 
   @Column()

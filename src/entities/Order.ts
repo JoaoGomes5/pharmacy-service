@@ -17,10 +17,10 @@ export class Order {
   id: string
   
   @Column()
-  medicine_id: string 
+  medicine_reference: string 
 
   @OneToOne(() => Medicine)
-  @JoinColumn({ name: 'medicine_id' })
+  @JoinColumn({ name: 'medicine_reference' })
   medicine: Medicine
   
   @Column()
