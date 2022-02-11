@@ -17,6 +17,11 @@ export class CreateMedicine1644441559014 implements MigrationInterface {
                         type: 'varchar',
                     },
                     {
+                        name: 'reference',
+                        type: 'varchar',
+                        isUnique: true
+                    },
+                    {
                         name: 'active_ingredient',
                         type: 'varchar',
                     },

@@ -1,7 +1,7 @@
-import { Request, Response } from "express";
+import { Medicine } from "@entities/Medicine";
 
 export class CreateTestService {
-  async execute(request: Request, response: Response) {
+  async execute() {
     
   }
 }
