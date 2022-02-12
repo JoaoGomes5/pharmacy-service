@@ -1,0 +1,8 @@
+# Decrement Medicine Stock
+POST http://localhost:3333/medicines/BE762/decrement HTTP/1.1
+content-type: application/json
+
+{
+  "value": 5
+}
+
