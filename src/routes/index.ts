@@ -1,29 +1,25 @@
-import { CreateMedicineController } from '@controllers/CreateMedicineController';
-import { CreateOrderController } from '@controllers/CreateOrderController';
-import { CreateUserController } from '@controllers/CreateUserController';
-import { DecrementMedicineStockController } from '@controllers/DecrementMedicineStockController';
-import { GetAllUsersController } from '@controllers/GetAllUsersController';
-import { IncrementMedicineStockController } from '@controllers/IncrementMedicineStockController';
+
+import { CreateOrderController } from '@controllers/Order/CreateOrderController';
+
+
+import { CreateMedicineController } from '@controllers/Medicine/CreateMedicineController';
+import { DecrementMedicineStockController } from '@controllers/Medicine/DecrementMedicineStockController';
+import { IncrementMedicineStockController } from '@controllers/Medicine/IncrementMedicineStockController';
+
+
 import  { Router } from 'express';
-import { DecrementMedicineStockService } from 'src/services/DecrementMedicineStockService';
+import userRoutes from './user.routes';
+import orderRoutes from './order.routes';
+import medicineRoutes from './medicine.routes';
 
 
 const routes = Router();
 
-routes.post('/users' , new CreateUserController().handle);
-routes.get('/users', new GetAllUsersController().handle);
+routes.use('/users' , userRoutes);
 
+routes.use('/medicines', medicineRoutes)
 
-routes.post('/medicines' , new CreateMedicineController().handle);
-routes.put(
-    '/medicines/:reference/increment',
-  new IncrementMedicineStockController().handle
-);
-routes.put(
-  '/medicines/:reference/decrement',
-  new DecrementMedicineStockController().handle);
-
-routes.post('/orders' , new CreateOrderController().handle);
+routes.use('/orders' , orderRoutes);
 
 
 

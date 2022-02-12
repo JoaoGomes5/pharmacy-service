@@ -1,8 +1,8 @@
-import { DecrementMedicineStockController } from "@controllers/DecrementMedicineStockController"
+
 import { Medicine } from "@entities/Medicine"
 import { Order } from "@entities/Order"
 import { getRepository } from "typeorm"
-import { DecrementMedicineStockService } from "./DecrementMedicineStockService"
+import { DecrementMedicineStockService } from "../Medicine/DecrementMedicineStockService"
 
 
 type OrderRequest = {

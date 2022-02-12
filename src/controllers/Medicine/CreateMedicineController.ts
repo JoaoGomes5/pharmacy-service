@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { CreateMedicineService } from 'src/services/CreateMedicineService'
+import { CreateMedicineService } from 'src/services/Medicine/CreateMedicineService'
 
 export class CreateMedicineController{
   async handle(request: Request, response: Response) {

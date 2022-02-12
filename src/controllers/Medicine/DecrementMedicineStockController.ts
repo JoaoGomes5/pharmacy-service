@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { DecrementMedicineStockService } from 'src/services/DecrementMedicineStockService';
+import { DecrementMedicineStockService } from 'src/services/Medicine/DecrementMedicineStockService';
 
 export class DecrementMedicineStockController {
   async handle(request: Request, response: Response) {

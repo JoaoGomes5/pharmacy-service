@@ -1,5 +1,5 @@
 # Decrement Medicine Stock
-PUT http://localhost:3333/medicines/BE762/decrement HTTP/1.1
+PUT http://localhost:3333/medicines/BR400/decrement HTTP/1.1
 content-type: application/json
 
 {

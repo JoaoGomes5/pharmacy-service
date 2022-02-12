@@ -3,9 +3,9 @@ POST http://localhost:3333/medicines HTTP/1.1
 content-type: application/json
 
 {
-  "name": "Ben U Ron",
-  "reference": "BE762",
-  "active_ingredient": "Orange",
-  "brand": "Nike",
-  "intake": "Put on the ass"
+  "name": "Brufen",
+  "reference": "BR400",
+  "active_ingredient": "Chocolate",
+  "brand": "Adidas",
+  "intake": "mouth"
 }

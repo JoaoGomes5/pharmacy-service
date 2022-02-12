@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { CreateOrderService } from "src/services/CreateOrderService";
+import { CreateOrderService } from "src/services/Order/CreateOrderService";
 
 
 export class CreateOrderController {
