@@ -1,0 +1,2 @@
+# Get All Tests By User Nif
+GET http://localhost:3333/tests/908765432 HTTP/1.1

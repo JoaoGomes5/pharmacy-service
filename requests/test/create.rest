@@ -1,13 +1,13 @@
-# Create User
+# Create Test
 POST http://localhost:3333/tests HTTP/1.1
 content-type: application/json
 
 {
   "user": {
-    "nif": 242078265,
-    "name": "João Gomes",
-    "email": "joao@gmail.com",
-    "phone": 911776543
+    "nif": 908765432,
+    "name": "Dara Alves",
+    "email": "da@gmail.com",
+    "phone": 987654321
   },
-  "result": true
+  "result": false
 }
