@@ -24,6 +24,7 @@ export class DecrementMedicineStockService{
 
     await repository.save(medicine)
 
+    console.log(`Medicine ${reference} decremented with ${value} on stock`);
     return medicine;
 
   }

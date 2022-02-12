@@ -4,7 +4,7 @@ content-type: application/json
 
 {
       "medicine_reference": "BE762",
-      "home_id": 1,
-      "quantity": 40
+      "home_id": 2,
+      "quantity": 5
 }
 
