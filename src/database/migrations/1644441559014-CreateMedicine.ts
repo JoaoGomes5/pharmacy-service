@@ -28,6 +28,7 @@ export class CreateMedicine1644441559014 implements MigrationInterface {
                     {
                         name: 'stock',
                         type: 'integer',
+                        default: 0
                     },
                     {
                         name: 'brand',

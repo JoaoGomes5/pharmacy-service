@@ -6,8 +6,8 @@ export class GetAllUsersController {
     const getAllUsersService = new GetAllUsersService();
 
     const users = await getAllUsersService.execute();
-    console.log("All users finded");
     
+    console.log("All users finded");
     return response.status(200).json(users);
   }
 }
