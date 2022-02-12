@@ -21,6 +21,9 @@ export class User {
   
   @Column()
   is_infected: boolean
+
+  @Column()
+  is_isolated: boolean
   
   @CreateDateColumn()
   created_at: Date

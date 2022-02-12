@@ -33,6 +33,7 @@ export class CreateUser1644436986067 implements MigrationInterface {
                     {
                         name: 'is_infected',
                         type: 'boolean',
+                        default: false
                     },
                     {
                         name: 'created_at',

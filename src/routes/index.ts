@@ -11,15 +11,19 @@ import  { Router } from 'express';
 import userRoutes from './user.routes';
 import orderRoutes from './order.routes';
 import medicineRoutes from './medicine.routes';
+import testRoutes from './test.routes';
 
 
 const routes = Router();
 
 routes.use('/users' , userRoutes);
 
+routes.use('/tests', testRoutes);
+
 routes.use('/medicines', medicineRoutes)
 
-routes.use('/orders' , orderRoutes);
+routes.use('/orders', orderRoutes);
+
 
 
 

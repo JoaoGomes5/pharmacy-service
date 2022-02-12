@@ -7,7 +7,7 @@ type UserRequest = {
   name: string
   email: string
   phone: number
-  is_infected: boolean
+  is_infected?: boolean
 }
 
 export class CreateUserService {

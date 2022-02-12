@@ -13,12 +13,12 @@ export class CreateTest1644440682798 implements MigrationInterface {
                         isPrimary: true,
                     },
                     {
-                        name: 'user_id',
-                        type: 'uuid',
+                        name: 'user_nif',
+                        type: 'integer',
                     },
                     {
                         name: 'result',
-                        type: 'varchar',
+                        type: 'boolean',
                     },
                     {
                         name: 'created_at',
@@ -28,10 +28,10 @@ export class CreateTest1644440682798 implements MigrationInterface {
                 ], 
                 foreignKeys: [
                     {
-                        name : 'fk_user_id',
-                        columnNames: ['user_id'],
+                        name : 'fk_user_nif',
+                        columnNames: ['user_nif'],
                         referencedTableName: 'users',
-                        referencedColumnNames: ['id']
+                        referencedColumnNames: ['nif']
 
                     } 
                 ]

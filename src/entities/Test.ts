@@ -9,14 +9,14 @@ export class Test {
   id: string
   
   @Column()
-  user_id: string 
+  user_nif: number 
 
   @OneToOne(() => User)
-  @JoinColumn({ name: 'user_id' })
+  @JoinColumn({ name: 'user_nif' })
   user: User
   
   @Column()
-  result: string
+  result: boolean
   
   @CreateDateColumn()
   created_at: Date
