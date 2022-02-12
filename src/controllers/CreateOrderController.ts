@@ -11,7 +11,7 @@ export class CreateOrderController {
     } = request.body;
     const createOrderService = new CreateOrderService();
 
-    const result = createOrderService.execute({
+    const result = await createOrderService.execute({
       medicine_reference,
       home_id,
       quantity

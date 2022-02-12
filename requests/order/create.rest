@@ -1,0 +1,10 @@
+# Create User
+POST http://localhost:3333/orders HTTP/1.1
+content-type: application/json
+
+{
+      "medicine_reference": "BE762",
+      "home_id": 1,
+      "quantity": 40
+}
+

@@ -1,5 +1,5 @@
 # Increment Medicine Stock
-POST http://localhost:3333/medicines/BE762/increment HTTP/1.1
+PUT http://localhost:3333/medicines/BE762/increment HTTP/1.1
 content-type: application/json
 
 {

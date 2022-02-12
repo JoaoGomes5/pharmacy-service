@@ -1,4 +1,5 @@
 import { CreateMedicineController } from '@controllers/CreateMedicineController';
+import { CreateOrderController } from '@controllers/CreateOrderController';
 import { CreateUserController } from '@controllers/CreateUserController';
 import { DecrementMedicineStockController } from '@controllers/DecrementMedicineStockController';
 import { GetAllUsersController } from '@controllers/GetAllUsersController';
@@ -14,13 +15,15 @@ routes.get('/users', new GetAllUsersController().handle);
 
 
 routes.post('/medicines' , new CreateMedicineController().handle);
-routes.post(
+routes.put(
     '/medicines/:reference/increment',
   new IncrementMedicineStockController().handle
 );
-routes.post(
+routes.put(
   '/medicines/:reference/decrement',
   new DecrementMedicineStockController().handle);
+
+routes.post('/orders' , new CreateOrderController().handle);
 
 
 

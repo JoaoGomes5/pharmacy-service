@@ -10,12 +10,12 @@ export class DecrementMedicineStockService{
   async execute( { reference, value }: DecrementMedicineStockRequest ): Promise<Medicine | Error> {
     const repository = getRepository(Medicine)
 
-    const medicine = await repository.findOne({ reference })
-
-    if(!medicine){
+    if(!await repository.findOne({ reference })){
         return new Error(`Medicine with referece ${reference} does not exists`)
     }
-
+    const medicine = await repository.findOne({ reference })
+    
+    
     if (medicine.stock < value) {
       return new Error(`Stock with reference ${reference} is not enough to do complete the order`)
     }
