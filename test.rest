@@ -1,0 +1,8 @@
+
+GET https://services.inapa.com/subway2feira/api/transportpasstype/
+
+Accept: application/xml
+Content-Type: application/xml
+Authorization: Basic G4 4tX)1H@LkV
+
+

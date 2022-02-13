@@ -18,7 +18,9 @@ export class CreateOrderController {
     })
 
     if(result instanceof Error) {
-      return response.status(400).json(result.message)
+      return response.status(400).json({
+        error: result.message,
+      })
     }
     
     console.log("Order Created");

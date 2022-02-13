@@ -17,7 +17,7 @@ export class DecrementMedicineStockService{
     
     
     if (medicine.stock < value) {
-      return new Error(`Stock with reference ${reference} is not enough to do complete the order`)
+      return new Error(`Stock with reference ${reference} is not enough to do complete the order, current stock is ${medicine.stock}`)
     }
     
     medicine.stock-=value
