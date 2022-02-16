@@ -5,6 +5,6 @@ content-type: application/json
 {
       "medicine_reference": "BR400",
       "home_id": 2,
-      "quantity": 5
+      "quantity": 24
 }
 
